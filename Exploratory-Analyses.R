@@ -39,7 +39,7 @@ dens.obs<-density(lizard.svl$SVL)
 
 
 
-###### Now, let's estimate the expected distribution of SVL values under a Normal distribution - the expected distribution of SVL measures if they follow a Normal distribution
+###### Now, let's simulate the expected distribution of SVL values under a Normal distribution - the expected distribution of SVL measures if they follow a Normal distribution
 
 
 sim.svl<-rnorm(length(lizard.svl$SVL), mean.svl, sd.svl)
@@ -89,7 +89,7 @@ sim.svl<-rnorm(length(lizard.svl$SVL), mean.svl, sd.svl)
 dens.sim<-density(sim.svl)
 
 
-####### PLOTS
+####### Plots for the log-transformed data
 
 par(mfrow=c(2, 1))
 
