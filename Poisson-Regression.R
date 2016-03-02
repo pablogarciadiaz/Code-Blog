@@ -25,7 +25,7 @@ veg.cov<-rbeta(sample.size, 0.5, 0.5)
 #### Define the parameters of the Poisson-log GLM for the relationship between the huntsman abundance and the vegetation cover
 
 intercept.sim=-2 	#### Intercept
-slope.sim=3		#### Slope
+slope.sim=5		#### Slope
 
 #### Define the mean huntsman abundance ? as a function of the vegetation cover
 
@@ -54,3 +54,4 @@ summary(fit1)
 conf.int<-confint(fit1)
 
 conf.int
+
